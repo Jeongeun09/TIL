@@ -21,7 +21,7 @@ Heap 영역은 2가지를 전제로 설계된다.
  Heap 영역은 3가지로 나눌 수 있다.
  Young, Old, MetaSpace가 있다.
 
- JDK 7 이전까지 있던 Permanent 영역이 사라지고 JDK 8부터는 MetaSpace라는 MetaData를 담는 영역이 생겨났다.
+ JDK 7까지 있던 Permanent 영역이 사라지고 JDK 8부터는 MetaSpace라는 MetaData를 담는 영역이 생겨났다.
 
 ### Minor GC
 > Young 영역에서 일어나는 GC이다. Young 영역도 두 개의 내부 영역을 가지고 있다. 하나는 Eden 영역, 다른 하나는 survivor 영역으로 구성된다.
