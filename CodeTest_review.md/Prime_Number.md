@@ -10,7 +10,11 @@ GPT에게 코테 문제를 짜주라고 하여 인텔리제이에서 직접 코�
 
 #### 소수란?
 : 1과 자신 이외의 나누어 떨어질 수 없는 수를 말한다.
-``` 처리 메서드
+
+---
+
+- 처리 메서드
+``` 
 public class Check {
         public static boolean Prime_num(int number) {
             if (number < 2) {
@@ -29,4 +33,24 @@ public class Check {
 2 미만 숫자, 나누어 떨어지는 숫자는 소수가 아니기 때문에 false를 반환했다. 
 그리고 두 가지 경우도 아닐 경우에는 소수이기 때문에 true를 반환했다.
 
-```main 함수
+
+----
+
+- main 함수
+
+```
+ public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("정수를 입력해주세요 : ");
+        int N = scanner.nextInt();
+
+        if (Check.Prime_num(N)) {
+            System.out.println(N + "는 소수입니다.");
+        } else {
+            System.out.println(N + "는 소수가 아닙니다.");
+        }
+    }
+```
+메서드를 사용함으로써
+main 함수에서는 코드가 줄어들고 호출만 하여 판별한 후 결과를 출력하는 로직만 들어있게 되었다.
